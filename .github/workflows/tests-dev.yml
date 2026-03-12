@@ -48,20 +48,7 @@ jobs:
           PIECE_SECRET_1: ${{ secrets.PIECE_SECRET_1 }}
         run: |
           pytest --cov=pieces --cov-report=xml --cov-report=term-missing \
-            --ignore=pieces/CustomPythonPiece/test_custom_python_piece.py \
-            --ignore=pieces/DataConversionPiece/test_data_conversion_piece.py \
-            --ignore=pieces/GetDateTimePiece/test_get_datetime_piece.py \
-            --ignore=pieces/GetItemFromArrayPiece/test_getitemfromarray.py  \
-            --ignore=pieces/HttpRequestPiece/test_httprequestpiece.py \
-            --ignore=pieces/ImageFilterPiece/test_imagefilterpiece.py \
-            --ignore=pieces/LogPiece/test_simple_log_piece.py \
-            --ignore=pieces/LoremIpsumGeneratorPiece/test_loremipsumpiece.py \
-            --ignore=pieces/PageScrapperPiece/test_pagescrapper.py \
-            --ignore=pieces/SaveImagePiece/test_save_image_piece.py \
-            --ignore=pieces/SleepPiece/test_sleep_piece.py \
-            --ignore=pieces/StringConditionChecksPiece/test_stringconditionchecks.py \
-            --ignore=pieces/StringOperationsPiece/test_stringoperationspiece.py \
-            --ignore=pieces/ToStringPiece/test_stringpiece.py
+            --ignore=pieces/PageScrapperPiece/test_pagescrapper.py
 
 
       - name: Upload coverage reports to Codecov
