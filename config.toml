@@ -1,7 +1,7 @@
 [repository]
 REGISTRY_NAME = "mockingbird1234"
 
-REPOSITORY_NAME = "default_domino_pieces"
+REPOSITORY_NAME = "trusted_data_default_domino_pieces"
 REPOSITORY_LABEL = "默认组件库"
 
 VERSION = "0.0.1"
