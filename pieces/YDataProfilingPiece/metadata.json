@@ -1,6 +1,6 @@
 {
     "name": "YDataProfilingPiece",
-    "description": "Piece that uses ydata-profiling to create fast EDA.",
+    "description": "使用ydata-profiling快速创建探索性数据分析报告",
     "dependency": {
         "requirements_file": "requirements_0.txt"
     },
@@ -9,7 +9,7 @@
         "eda"
     ],
     "style": {
-        "node_label": "Data Profiling",
+        "node_label": "数据分析",
         "icon_class_name": "mingcute:profile-line"
     }
 }

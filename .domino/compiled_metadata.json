@@ -51,7 +51,7 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/Tauffer-Consulting/default_domino_pieces/tree/main/pieces/SaveImagePiece"
+        "source_url": "https://github.com/Mockingbird1234/trusted_data_default_domino_pieces/tree/main/pieces/SaveImagePiece"
     },
     "GetDateTimePiece": {
         "name": "GetDateTimePiece",
@@ -163,7 +163,7 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/Tauffer-Consulting/default_domino_pieces/tree/main/pieces/GetDateTimePiece"
+        "source_url": "https://github.com/Mockingbird1234/trusted_data_default_domino_pieces/tree/main/pieces/GetDateTimePiece"
     },
     "CustomPythonPiece": {
         "name": "CustomPythonPiece",
@@ -349,7 +349,7 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/Tauffer-Consulting/default_domino_pieces/tree/main/pieces/CustomPythonPiece"
+        "source_url": "https://github.com/Mockingbird1234/trusted_data_default_domino_pieces/tree/main/pieces/CustomPythonPiece"
     },
     "LogPiece": {
         "name": "LogPiece",
@@ -584,7 +584,7 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/Tauffer-Consulting/default_domino_pieces/tree/main/pieces/LogPiece"
+        "source_url": "https://github.com/Mockingbird1234/trusted_data_default_domino_pieces/tree/main/pieces/LogPiece"
     },
     "ImageFilterPiece": {
         "name": "ImageFilterPiece",
@@ -724,7 +724,7 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/Tauffer-Consulting/default_domino_pieces/tree/main/pieces/ImageFilterPiece"
+        "source_url": "https://github.com/Mockingbird1234/trusted_data_default_domino_pieces/tree/main/pieces/ImageFilterPiece"
     },
     "DataConversionPiece": {
         "name": "DataConversionPiece",
@@ -807,7 +807,7 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/Tauffer-Consulting/default_domino_pieces/tree/main/pieces/DataConversionPiece"
+        "source_url": "https://github.com/Mockingbird1234/trusted_data_default_domino_pieces/tree/main/pieces/DataConversionPiece"
     },
     "YDataProfilingPiece": {
         "name": "YDataProfilingPiece",
@@ -875,7 +875,7 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/Tauffer-Consulting/default_domino_pieces/tree/main/pieces/YDataProfilingPiece"
+        "source_url": "https://github.com/Mockingbird1234/trusted_data_default_domino_pieces/tree/main/pieces/YDataProfilingPiece"
     },
     "StringConditionChecksPiece": {
         "name": "StringConditionChecksPiece",
@@ -995,7 +995,7 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/Tauffer-Consulting/default_domino_pieces/tree/main/pieces/StringConditionChecksPiece"
+        "source_url": "https://github.com/Mockingbird1234/trusted_data_default_domino_pieces/tree/main/pieces/StringConditionChecksPiece"
     },
     "PageScrapperPiece": {
         "name": "PageScrapperPiece",
@@ -1083,7 +1083,7 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/Tauffer-Consulting/default_domino_pieces/tree/main/pieces/PageScrapperPiece"
+        "source_url": "https://github.com/Mockingbird1234/trusted_data_default_domino_pieces/tree/main/pieces/PageScrapperPiece"
     },
     "SleepPiece": {
         "name": "SleepPiece",
@@ -1137,7 +1137,7 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/Tauffer-Consulting/default_domino_pieces/tree/main/pieces/SleepPiece"
+        "source_url": "https://github.com/Mockingbird1234/trusted_data_default_domino_pieces/tree/main/pieces/SleepPiece"
     },
     "StringOperationsPiece": {
         "name": "StringOperationsPiece",
@@ -1244,7 +1244,7 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/Tauffer-Consulting/default_domino_pieces/tree/main/pieces/StringOperationsPiece"
+        "source_url": "https://github.com/Mockingbird1234/trusted_data_default_domino_pieces/tree/main/pieces/StringOperationsPiece"
     },
     "ToyDatasetsPiece": {
         "name": "ToyDatasetsPiece",
@@ -1317,7 +1317,7 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/Tauffer-Consulting/default_domino_pieces/tree/main/pieces/ToyDatasetsPiece"
+        "source_url": "https://github.com/Mockingbird1234/trusted_data_default_domino_pieces/tree/main/pieces/ToyDatasetsPiece"
     },
     "ToStringPiece": {
         "name": "ToStringPiece",
@@ -1406,7 +1406,7 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/Tauffer-Consulting/default_domino_pieces/tree/main/pieces/ToStringPiece"
+        "source_url": "https://github.com/Mockingbird1234/trusted_data_default_domino_pieces/tree/main/pieces/ToStringPiece"
     },
     "LoremIpsumGeneratorPiece": {
         "name": "LoremIpsumGeneratorPiece",
@@ -1480,7 +1480,7 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/Tauffer-Consulting/default_domino_pieces/tree/main/pieces/LoremIpsumGeneratorPiece"
+        "source_url": "https://github.com/Mockingbird1234/trusted_data_default_domino_pieces/tree/main/pieces/LoremIpsumGeneratorPiece"
     },
     "GetItemFromArrayPiece": {
         "name": "GetItemFromArrayPiece",
@@ -1598,7 +1598,7 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/Tauffer-Consulting/default_domino_pieces/tree/main/pieces/GetItemFromArrayPiece"
+        "source_url": "https://github.com/Mockingbird1234/trusted_data_default_domino_pieces/tree/main/pieces/GetItemFromArrayPiece"
     },
     "HttpRequestPiece": {
         "name": "HttpRequestPiece",
@@ -1687,6 +1687,6 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/Tauffer-Consulting/default_domino_pieces/tree/main/pieces/HttpRequestPiece"
+        "source_url": "https://github.com/Mockingbird1234/trusted_data_default_domino_pieces/tree/main/pieces/HttpRequestPiece"
     }
 }

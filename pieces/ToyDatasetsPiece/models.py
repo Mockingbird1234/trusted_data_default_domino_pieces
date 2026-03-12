@@ -11,7 +11,13 @@ class DatasetName(str, Enum):
     linnerrud = "linnerrud"
 
 class InputModel(BaseModel):
-    dataset: DatasetName = Field(default='iris', title='Dataset name')
+    dataset: DatasetName = Field(
+        default='iris', 
+        description='数据集名称',
+        json_schema_extra={
+            "title": "数据集名称"
+        }
+    )
 
 class OutputModel(BaseModel):
-    file_path: Optional[str] = Field(default=None, title='File path')
+    file_path: Optional[str] = Field(default=None, title='文件路径')

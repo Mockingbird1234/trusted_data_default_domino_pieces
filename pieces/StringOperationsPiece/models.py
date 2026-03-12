@@ -14,34 +14,40 @@ class OperationsTypes(str, Enum):
 
 class OperationItem(BaseModel):
     operation: OperationsTypes = Field(
-        description='Operation to perform. Options: `concatenate`, `lower_case`, `upper_case`, `split_by`, `replace_by`.',
+        description='要执行的操作。选项：`concatenate`（连接）、`lower_case`（小写）、`upper_case`（大写）、`split_by`（分割）、`replace_by`（替换）',
         json_schema_extra={
             "from_upstream": "never"
         }
     )
     second_argument: str = Field(
         default='',
-        description='Value for the second argument.',
+        description='第二个参数的值',
     )
     auxiliary_argument: str = Field(
         default='',
-        description="""Auxiliary argument for `split_by` and `replace_by` operations.
-If `split_by` is selected, this argument will be used as the index of the split array.
-If `replace_by` is selected, this argument will be used as the string to replace.
+        description="""用于 `split_by` 和 `replace_by` 操作的辅助参数。
+如果选择 `split_by`，此参数将用作分割数组的索引。
+如果选择 `replace_by`，此参数将用作要替换的字符串。
 """,
     )
 
 
 class InputModel(BaseModel):
     first_argument: str = Field(
-        description='Value for the first argument.',
+        description='第一个参数的值',
+        json_schema_extra={
+            "title": "第一个参数"
+        }
     )
     operations: List[OperationItem] = Field(
-        description='Sequence of operations to perform.',
+        description='要执行的操作序列',
+        json_schema_extra={
+            "title": "操作序列"
+        }
     )
 
 
 class OutputModel(BaseModel):
     output_string: str = Field(
-        description='Output string.',
+        description='输出字符串',
     )

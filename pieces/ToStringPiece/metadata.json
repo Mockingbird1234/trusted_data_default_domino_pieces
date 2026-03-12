@@ -1,6 +1,6 @@
 {
     "name": "ToStringPiece",
-    "description": "A Piece that transforms any input to string.",
+    "description": "将任何输入转换为字符串",
     "dependency": {
         "requirements_file": "requirements_0.txt"
     },
@@ -9,7 +9,7 @@
         "string"
     ],
     "style": {
-        "node_label": "To String",
+        "node_label": "转为字符串",
         "icon_class_name": "solar:text-bold"
     }
 }

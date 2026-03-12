@@ -9,20 +9,28 @@ class DataFormatOption(str, Enum):
 
 class InputModel(BaseModel):
     input_data: str = Field(
-        description='Input data to be converted. Can be a file path or data as string.'
-
+        description='要转换的输入数据。可以是文件路径或字符串数据',
+        json_schema_extra={
+            "title": "输入数据"
+        }
     )
     input_data_format: DataFormatOption = Field(
         default=DataFormatOption.csv,
-        description='Input data format to be converted.'
+        description='要转换的输入数据格式',
+        json_schema_extra={
+            "title": "输入数据格式"
+        }
     )
     output_data_format: DataFormatOption = Field(
         default=DataFormatOption.json,
-        description='Output data format.'
+        description='输出数据格式',
+        json_schema_extra={
+            "title": "输出数据格式"
+        }
     )
 
 
 class OutputModel(BaseModel):
     output_file_path: str = Field(
-        description='Path to the converted file.'
+        description='转换后的文件路径'
     )

@@ -1,6 +1,6 @@
 {
     "name": "GetDateTimePiece",
-    "description": "A Piece that gets system's current date and time.",
+    "description": "获取系统当前的日期和时间",
     "dependency": {
         "requirements_file": "requirements_0.txt"
     },
@@ -9,7 +9,7 @@
         "datetime"
     ],
     "style": {
-        "node_label": "Get Datetime",
+        "node_label": "获取日期时间",
         "icon_class_name": "fa:calendar-o"
     }
 }

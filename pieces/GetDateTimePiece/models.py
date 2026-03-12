@@ -38,11 +38,17 @@ class InputModel(BaseModel):
     """
     use_timezone: bool = Field(
         default=False,
-        description='Whether to use a timezone for the timestamp.'
+        description='是否为时间戳使用时区',
+        json_schema_extra={
+            "title": "使用时区"
+        }
     )
     timezone: TZOptions = Field(
         default=TZOptions.utc_plus_00,
-        description='Timezone to use for timestamp.'
+        description='时间戳使用的时区',
+        json_schema_extra={
+            "title": "时区"
+        }
     )
 
 
@@ -51,11 +57,11 @@ class OutputModel(BaseModel):
     GetDateTimePiece Output Model
     """
     date: dt_date = Field(
-        description='Date of the timestamp, in ISO format.'
+        description='时间戳的日期（ISO格式）'
     )
     time: dt_time = Field(
-        description='Time of the timestamp, in ISO format.'
+        description='时间戳的时间（ISO格式）'
     )
     datetime: dt_datetime = Field(
-        description='Datetime of the timestamp, in ISO format.'
+        description='时间戳的日期时间（ISO格式）'
     )

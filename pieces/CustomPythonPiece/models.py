@@ -7,14 +7,14 @@ from datetime import date as dt_date, datetime as dt_datetime, time as dt_time
 class InputKwargsModel(BaseModel):
     kwarg_name: str = Field(
         default=None,
-        description='Argument name.',
+        description='参数名称',
         json_schema_extra={
             "from_upstream": "never"
         }
     )
     kwarg_value: Union[str, list, int, float, bool, dict, dt_date, dt_time, dt_datetime] = Field(
         default=None,
-        description='Argument value.',
+        description='参数值',
         json_schema_extra={
             "from_upstream": "always"
         }
@@ -30,9 +30,10 @@ class InputModel(BaseModel):
             InputKwargsModel(kwarg_value="", kwarg_name="kwarg_2"),
             InputKwargsModel(kwarg_value="", kwarg_name="kwarg_1"),
         ],
-        description='Input arguments.',
+        description='输入参数',
         json_schema_extra={
-            "from_upstream": "never"
+            "from_upstream": "never",
+            "title": "输入参数"
         }
     )
     script: str = Field(
@@ -49,10 +50,11 @@ def custom_function(kwarg_1, kwarg_2):
         "output_2": 420
     }
 """,
-        description='Python script.',
+        description='Python脚本',
         json_schema_extra={
             "from_upstream": "never",
             'widget': "codeeditor-python",
+            "title": "Python脚本"
         }
     )
     output_args: List[OutputModifierModel] = Field(
@@ -60,9 +62,10 @@ def custom_function(kwarg_1, kwarg_2):
             OutputModifierModel(name="output_1", type=OutputModifierItemType.string, description="An example string output"),
             OutputModifierModel(name="output_2", type=OutputModifierItemType.integer, description="An example integer output"),
         ],
-        description='Output arguments.',
+        description='输出参数',
         json_schema_extra={
-            "from_upstream": "never"
+            "from_upstream": "never",
+            "title": "输出参数"
         }
     )
 

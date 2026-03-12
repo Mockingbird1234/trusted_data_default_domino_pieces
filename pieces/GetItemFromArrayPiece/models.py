@@ -16,19 +16,26 @@ class InputModel(BaseModel):
     GetItemFromArrayPiece Input Model
     """
     input_array: list = Field(
-        description='Input array to get item from.',
+        description='要获取项的输入数组',
         json_schema_extra={
-            "from_upstream": "always"
+            "from_upstream": "always",
+            "title": "输入数组"
         }
     )
     index: IndexType = Field(
         default=IndexType.first,
-        description='Index of item to get from input array.'
+        description='从输入数组获取项的索引',
+        json_schema_extra={
+            "title": "索引类型"
+        }
     )
     another_index: int = Field(
         default=1,
         ge=1,
-        description='Index number of item to get from input array.'
+        description='从输入数组获取项的索引编号',
+        json_schema_extra={
+            "title": "索引编号"
+        }
     )
 
 
@@ -37,5 +44,5 @@ class OutputModel(BaseModel):
     GetItemFromArrayPiece Output Model
     """
     output_value: Union[str, list, int, float, bool, dict, dt_date, dt_time, dt_datetime] = Field(
-        description='Item from input array at specified index.'
+        description='指定索引处输入数组的项'
     )

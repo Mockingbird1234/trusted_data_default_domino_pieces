@@ -13,63 +13,97 @@ class OutputTypeType(str, Enum):
 
 class InputModel(BaseModel):
     input_image: str = Field(
-        description='Input image. It should be either a path to a file, or a base64 encoded string.',
+        description='输入图像。应该是文件路径或base64编码字符串',
         json_schema_extra={
-            "from_upstream": "always"
+            "from_upstream": "always",
+            "title": "输入图像"
         }
     )
     sepia: bool = Field(
         default=False,
-        description='Apply sepia effect.',
+        description='应用棕褐色效果',
+        json_schema_extra={
+            "title": "棕褐色效果"
+        }
     )
     black_and_white: bool = Field(
         default=False,
-        description='Apply black and white effect.',
+        description='应用黑白效果',
+        json_schema_extra={
+            "title": "黑白效果"
+        }
     )
     brightness: bool = Field(
         default=False,
-        description='Apply brightness effect.',
+        description='应用亮度效果',
+        json_schema_extra={
+            "title": "亮度效果"
+        }
     )
     darkness: bool = Field(
         default=False,
-        description='Apply darkness effect.',
+        description='应用暗度效果',
+        json_schema_extra={
+            "title": "暗度效果"
+        }
     )
     contrast: bool = Field(
         default=False,
-        description='Apply contrast effect.',
+        description='应用对比度效果',
+        json_schema_extra={
+            "title": "对比度效果"
+        }
     )
     red: bool = Field(
         default=False,
-        description='Apply red effect.',
+        description='应用红色效果',
+        json_schema_extra={
+            "title": "红色效果"
+        }
     )
     green: bool = Field(
         default=False,
-        description='Apply green effect.',
+        description='应用绿色效果',
+        json_schema_extra={
+            "title": "绿色效果"
+        }
     )
     blue: bool = Field(
         default=False,
-        description='Apply blue effect.',
+        description='应用蓝色效果',
+        json_schema_extra={
+            "title": "蓝色效果"
+        }
     )
     cool: bool = Field(
         default=False,
-        description='Apply cool effect.',
+        description='应用冷色效果',
+        json_schema_extra={
+            "title": "冷色效果"
+        }
     )
     warm: bool = Field(
         default=False,
-        description='Apply warm effect.',
+        description='应用暖色效果',
+        json_schema_extra={
+            "title": "暖色效果"
+        }
     )
     output_type: OutputTypeType = Field(
         default=OutputTypeType.both,
-        description='Format of the output image. Options are: `file`, `base64_string`, `both`.',
+        description='输出图像的格式。选项有：`file`（文件）、`base64_string`（base64字符串）、`both`（两者）',
+        json_schema_extra={
+            "title": "输出类型"
+        }
     )
 
 
 class OutputModel(BaseModel):
     image_base64_string: str = Field(
         default='',
-        description='Base64 encoded string of the output image.',
+        description='输出图像的base64编码字符串',
     )
     image_file_path: str = Field(
         default='',
-        description='Path to the output image file.',
+        description='输出图像文件的路径',
     )

@@ -1,6 +1,6 @@
 {
     "name": "StringConditionChecksPiece",
-    "description": "A Piece that checks conditions on a string",
+    "description": "检查字符串的各种条件",
     "dependency": {
         "requirements_file": "requirements_0.txt"
     },
@@ -9,7 +9,7 @@
         "string"
     ],
     "style": {
-        "node_label": "String Conditions Checks",
+        "node_label": "字符串条件检查",
         "icon_class_name": "mdi:format-letter-matches"
     }
 }

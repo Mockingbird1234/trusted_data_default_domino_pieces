@@ -8,7 +8,10 @@ class InputModel(BaseModel):
 
     sleep_time: float = Field(
         default=1,
-        description="Number of seconds to sleep",
+        description="休眠的秒数",
+        json_schema_extra={
+            "title": "休眠时间"
+        }
     )
 
 
@@ -17,5 +20,5 @@ class OutputModel(BaseModel):
     Sleep Piece Output Model
     """
     message: str = Field(
-        description="Sleep piece executed"
+        description="休眠组件已执行"
     )

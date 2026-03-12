@@ -1,6 +1,6 @@
 {
     "name": "CustomPythonPiece",
-    "description": "Executes user-defined Python code.",
+    "description": "执行用户自定义的Python代码",
     "dependency": {
         "requirements_file": "requirements_0.txt"
     },
@@ -9,7 +9,7 @@
         "python"
     ],
     "style": {
-        "node_label": "Custom Python",
+        "node_label": "自定义Python",
         "icon_class_name": "fa-brands:python"
     }
 }

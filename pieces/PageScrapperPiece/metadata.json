@@ -1,6 +1,6 @@
 {
     "name": "PageScrapperPiece",
-    "description": "Scrapes text from a web page, given a URL and a list of HTML tags.",
+    "description": "根据URL和HTML标签列表从网页抓取文本",
     "dependency": {
         "requirements_file": "requirements_0.txt"
     },
@@ -9,7 +9,7 @@
         "scrapper"
     ],
     "style": {
-        "node_label": "Page Scrapper",
+        "node_label": "网页抓取",
         "icon_class_name": "lucide:text-selection"
     }
 }

@@ -5,11 +5,11 @@ from typing import List
 class ItemType(BaseModel):
     tag: str = Field(
         default="p",
-        description='HTML tag name.',
+        description='HTML标签名称',
     )
     class_name: str = Field(
         default="",
-        description='HTML tag class name.',
+        description='HTML标签类名',
     )
 
 
@@ -19,11 +19,17 @@ class InputModel(BaseModel):
     """
     url: str = Field(
         default="",
-        description='URL to retrieve content from.'
+        description='要检索内容的URL',
+        json_schema_extra={
+            "title": "URL"
+        }
     )
     search_items: List[ItemType] = Field(
         default=[ItemType()],
-        description='List of HTML tags and class names to search for.'
+        description='要搜索的HTML标签和类名列表',
+        json_schema_extra={
+            "title": "搜索项"
+        }
     )
 
 
@@ -32,5 +38,5 @@ class OutputModel(BaseModel):
     PageScrapperPiece Output Model
     """
     scrapped_text: str = Field(
-        description='Scrapped text from the URL.'
+        description='从URL抓取的文本'
     )

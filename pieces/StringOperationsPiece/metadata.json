@@ -1,6 +1,6 @@
 {
     "name": "StringOperationsPiece",
-    "description": "A Piece that performs string operations",
+    "description": "执行字符串操作",
     "dependency": {
         "requirements_file": "requirements_0.txt"
     },
@@ -9,7 +9,7 @@
         "string"
     ],
     "style": {
-        "node_label": "String Operations",
+        "node_label": "字符串操作",
         "icon_class_name": "tabler:sort-a-z"
     }
 }

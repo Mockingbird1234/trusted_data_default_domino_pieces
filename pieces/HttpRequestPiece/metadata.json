@@ -1,6 +1,6 @@
 {
     "name": "HttpRequestPiece",
-    "description": "Makes a HTTP request to a given URL.",
+    "description": "向指定URL发起HTTP请求",
     "dependency": {
         "requirements_file": "requirements_0.txt"
     },
@@ -10,7 +10,7 @@
         "request"
     ],
     "style": {
-        "node_label": "HTTP Request",
+        "node_label": "HTTP请求",
         "icon_class_name": "material-symbols:send"
     }
 }

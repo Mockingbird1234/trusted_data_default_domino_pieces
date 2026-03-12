@@ -8,9 +8,10 @@ class InputModel(BaseModel):
     ToStringPiece Input Model
     """
     input_value: Union[str, list, int, float, bool, dict, dt_date, dt_time, dt_datetime] = Field(
-        description='Input value to be turned into string.',
+        description='要转换为字符串的输入值',
         json_schema_extra={
-            "from_upstream": "always"
+            "from_upstream": "always",
+            "title": "输入值"
         }
     )
 
@@ -20,5 +21,5 @@ class OutputModel(BaseModel):
     ToStringPiece Output Model
     """
     output_value: str = Field(
-        description='Input value as a string.'
+        description='转换为字符串的输入值'
     )

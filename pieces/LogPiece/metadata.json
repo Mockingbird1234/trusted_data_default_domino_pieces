@@ -1,6 +1,6 @@
 {
     "name": "LogPiece",
-    "description": "A Piece that logs its inputs.",
+    "description": "记录输入的日志信息",
     "dependency": {
         "requirements_file": "requirements_0.txt"
     },
@@ -9,7 +9,7 @@
         "log"
     ],
     "style": {
-        "node_label": "Log",
+        "node_label": "日志",
         "icon_class_name": "fa-solid:file-alt"
     }
 }

@@ -1,6 +1,6 @@
 {
     "name": "GetItemFromArrayPiece",
-    "description": "Get one item from an input array.",
+    "description": "从输入数组中获取一个项",
     "dependency": {
         "requirements_file": "requirements_0.txt"
     },
@@ -9,7 +9,7 @@
         "array"
     ],
     "style": {
-        "node_label": "Get Item From Array",
+        "node_label": "从数组获取项",
         "icon_class_name": "fluent:tray-item-remove-24-filled"
     }
 }

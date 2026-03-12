@@ -21,8 +21,8 @@ class LogicalOperators(str, Enum):
 
 class OperationItem(BaseModel):
     operation: ChecksTypes = Field(
-        description="""Operation to perform.
-Options: `contains_case_sensitive`, `contains_case_insensitive`, `length_greater_than`, `length_greater_than_or_equal_to`, `length_less_than`, `length_less_than_or_equal_to`, `length_equal_to`, `regex_match`.
+        description="""要执行的操作。
+选项：`contains_case_sensitive`（区分大小写包含）、`contains_case_insensitive`（不区分大小写包含）、`length_greater_than`（长度大于）、`length_greater_than_or_equal_to`（长度大于等于）、`length_less_than`（长度小于）、`length_less_than_or_equal_to`（长度小于等于）、`length_equal_to`（长度等于）、`regex_match`（正则匹配）。
 """,
         json_schema_extra={
             "from_upstream": "never"
@@ -30,28 +30,34 @@ Options: `contains_case_sensitive`, `contains_case_insensitive`, `length_greater
     )
     second_argument: str = Field(
         default='',
-        description="""Value for the second argument.
-If `contains_case_sensitive` or `contains_case_insensitive` are selected, this argument will be used as the string to search for.
-If `length_greater_than`, `length_greater_than_or_equal_to`, `length_less_than`, `length_less_than_or_equal_to` or `length_equal_to` are selected, this argument will be used as the integer value to compare with.
-If `regex_match` is selected, this argument will be used as the string to match with the regex pattern.
+        description="""第二个参数的值。
+如果选择 `contains_case_sensitive` 或 `contains_case_insensitive`，此参数将用作要搜索的字符串。
+如果选择 `length_greater_than`、`length_greater_than_or_equal_to`、`length_less_than`、`length_less_than_or_equal_to` 或 `length_equal_to`，此参数将用作要比较的整数值。
+如果选择 `regex_match`，此参数将用作与正则表达式模式匹配的字符串。
 """,
     )
     next_logical_operator: LogicalOperators = Field(
         default=LogicalOperators.and_operator,
-        description="Logical operator to use with the next operation result.",
+        description="与下一个操作结果一起使用的逻辑运算符",
     )
 
 
 class InputModel(BaseModel):
     input_string: str = Field(
-        description='Input string.',
+        description='输入字符串',
+        json_schema_extra={
+            "title": "输入字符串"
+        }
     )
     operations: List[OperationItem] = Field(
-        description='Sequence of operations to perform.',
+        description='要执行的操作序列',
+        json_schema_extra={
+            "title": "操作序列"
+        }
     )
 
 
 class OutputModel(BaseModel):
     check_result: bool = Field(
-        description='Result of the checks.',
+        description='检查结果',
     )

@@ -1,6 +1,6 @@
 {
     "name": "LoremIpsumGeneratorPiece",
-    "description": "A Piece that generates Lorem Ipsum text.",
+    "description": "生成Lorem Ipsum占位文本",
     "dependency": {
         "requirements_file": "requirements_0.txt"
     },
@@ -9,7 +9,7 @@
         "text"
     ],
     "style": {
-        "node_label": "Lorem Ipsum Generator",
+        "node_label": "Lorem Ipsum生成器",
         "icon_class_name": "carbon:character-sentence-case"
     }
 }

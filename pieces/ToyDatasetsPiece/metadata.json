@@ -1,6 +1,6 @@
 {
     "name": "ToyDatasetsPiece",
-    "description": "Load toy datasets from scikit-learn",
+    "description": "从scikit-learn加载玩具数据集",
     "dependency": {
         "requirements_file": "requirements_0.txt"
     },
@@ -9,7 +9,7 @@
         "datasets"
     ],
     "style": {
-        "node_label": "Toy Datasets",
+        "node_label": "玩具数据集",
         "icon_class_name": "lucide:toy-brick"
     }
 }
