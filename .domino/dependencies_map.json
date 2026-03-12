@@ -5,24 +5,24 @@
             "requirements_file": "requirements_0.txt"
         },
         "pieces": [
-            "SaveImagePiece",
-            "GetDateTimePiece",
-            "CustomPythonPiece",
-            "LogPiece",
-            "ImageFilterPiece",
-            "DataConversionPiece",
-            "YDataProfilingPiece",
-            "StringConditionChecksPiece",
-            "PageScrapperPiece",
-            "SleepPiece",
-            "StringOperationsPiece",
-            "ToyDatasetsPiece",
-            "ToStringPiece",
             "LoremIpsumGeneratorPiece",
+            "DataConversionPiece",
             "GetItemFromArrayPiece",
-            "HttpRequestPiece"
+            "HttpRequestPiece",
+            "ImageFilterPiece",
+            "StringConditionChecksPiece",
+            "SaveImagePiece",
+            "ToyDatasetsPiece",
+            "SleepPiece",
+            "YDataProfilingPiece",
+            "GetDateTimePiece",
+            "LogPiece",
+            "PageScrapperPiece",
+            "CustomPythonPiece",
+            "StringOperationsPiece",
+            "ToStringPiece"
         ],
         "secrets": [],
-        "source_image": "ghcr.io/mockingbird1234/trusted_data_default_domino_pieces:group0"
+        "source_image": "ghcr.io/mockingbird1234/default_domino_pieces:development-group0"
     }
 }
