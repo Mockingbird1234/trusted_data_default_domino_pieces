@@ -23,6 +23,6 @@
             "ToStringPiece"
         ],
         "secrets": [],
-        "source_image": "ghcr.io/mockingbird1234/default_domino_pieces:development-group0"
+        "source_image": "ghcr.io/mockingbird1234/trusted_data_default_domino_pieces:development-group0"
     }
 }
